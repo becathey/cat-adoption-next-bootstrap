@@ -3,6 +3,7 @@
     height: 22.5rem;
     text-align: center;
     color: hsl(300, 85%, 20%);
+    margin-right: 3rem;
     margin-bottom: 2rem;
     box-shadow: 0.1rem 0.1rem 1rem hsla(0, 0%, 0%, 0.3);
 }

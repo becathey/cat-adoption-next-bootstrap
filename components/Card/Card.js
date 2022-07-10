@@ -6,7 +6,9 @@ export default function Card({name, phone, email, image, id}) {
   return (
     <div className={styles.card}>
       <div className={styles["card-header"]}>
-          <Image src={image.url} alt={image.alt} className={styles["card-img"]} />
+          <picture>
+          <img src={image.url} alt={image.alt} className={styles["card-img"]} />
+          </picture>
       </div>
       <div>
           <h3>{name}</h3>
