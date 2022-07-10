@@ -7,7 +7,7 @@ export default function Card({name, phone, email, image, id}) {
     <div className={styles.card}>
       <div className={styles["card-header"]}>
           <picture>
-          <img src={image.url} alt={image.alt} className={styles["card-img"]} />
+            <img src={image.url} alt={image.alt} className={styles["card-img"]} />
           </picture>
       </div>
       <div>
