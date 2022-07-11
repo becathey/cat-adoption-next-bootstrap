@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import React, { useState, useEffect } from 'react'
-import Nav from '../../components/Nav/Nav'
+import DefaultLayout from '../../layouts/Default'
 
 export default function Cat() {
     const [cat, setCat] = useState(null)
@@ -16,7 +16,7 @@ export default function Cat() {
     const {id} = router.query
     return (
         <div>
-            <Nav />
+            <DefaultLayout>
             {cat && (
                 <div className='container mt-5' style={{display: 'flex'}}>
                     <picture>
@@ -28,6 +28,7 @@ export default function Cat() {
                     </div>
                 </div>
             )}
+            </DefaultLayout>
         </div>
     )
 }

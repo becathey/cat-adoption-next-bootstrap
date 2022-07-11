@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Card from '../../components/Card/Card'
-import Nav from '../../components/Nav/Nav'
+import DefaultLayout from '../../layouts/Default'
 
 export default function Home() {
     const [cats, setCats] = useState([])
@@ -15,21 +15,22 @@ export default function Home() {
     }, [])
   return (
       <>
-    <Nav />
-    <div className='container mt-5'>
-        <div style={{display: "flex", flexWrap: "wrap"}}>
-      {cats.map(cat => (
-          <Card
-            name={cat.name}
-            id={cat.id}
-            key={cat.id}
-            phone={cat.phone}
-            email={cat.email}
-            image={cat.image}
-          />
-      ))}
-      </div>
-    </div>
-    </>
+        <DefaultLayout>
+        <div className='container mt-5'>
+            <div style={{display: "flex", flexWrap: "wrap"}}>
+                {cats.map(cat => (
+                    <Card
+                        name={cat.name}
+                        id={cat.id}
+                        key={cat.id}
+                        phone={cat.phone}
+                        email={cat.email}
+                        image={cat.image}
+                    />
+                ))}
+            </div>
+        </div>
+        </DefaultLayout>
+      </>
   )
 }
