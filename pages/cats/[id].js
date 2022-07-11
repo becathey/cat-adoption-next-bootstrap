@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import React, { useState, useEffect } from 'react'
+import Head from 'next/head'
 import DefaultLayout from '../../layouts/Default'
 
 export default function Cat() {
@@ -18,6 +19,12 @@ export default function Cat() {
         <div>
             <DefaultLayout>
             {cat && (
+                <>
+                <Head>
+                <title>{cat.name}</title>
+                <meta name="description" content="Adopt a cat companion" />
+                <link rel="icon" href="/favicon.ico" />
+              </Head>
                 <div className='container mt-5' style={{display: 'flex'}}>
                     <picture>
                         <img src={cat.image.url} alt={cat.image.alt} />
@@ -27,6 +34,7 @@ export default function Cat() {
                         <p>{cat.description}</p>
                     </div>
                 </div>
+                </>
             )}
             </DefaultLayout>
         </div>

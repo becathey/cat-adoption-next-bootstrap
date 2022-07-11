@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Head from 'next/head'
 import Card from '../../components/Card/Card'
 import DefaultLayout from '../../layouts/Default'
 
@@ -15,6 +16,11 @@ export default function Home() {
     }, [])
   return (
       <>
+        <Head>
+        <title>Our Cats</title>
+        <meta name="description" content="Adopt a cat companion" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
         <DefaultLayout>
         <div className='container mt-5'>
             <div style={{display: "flex", flexWrap: "wrap"}}>
