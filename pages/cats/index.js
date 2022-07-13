@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Card from '../../components/Card/Card'
 import DefaultLayout from '../../layouts/Default'
+import styles from '../../styles/Home.module.css'
 
 export default function Home() {
     const [cats, setCats] = useState([])
@@ -23,7 +24,7 @@ export default function Home() {
       </Head>
         <DefaultLayout>
         <div className='container mt-5'>
-            <div style={{display: "flex", flexWrap: "wrap"}}>
+            <div className={styles['cards-container']}>
                 {cats.map(cat => (
                     <Card
                         name={cat.name}

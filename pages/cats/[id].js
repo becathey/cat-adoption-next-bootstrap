@@ -17,24 +17,25 @@ export default function Cat() {
     const {id} = router.query
     return (
         <div>
+            
             <DefaultLayout>
             {cat && (
-                <>
-                <Head>
-                <title>{cat.name}</title>
-                <meta name="description" content="Adopt a cat companion" />
-                <link rel="icon" href="/favicon.ico" />
-              </Head>
+            <>
+            <Head>
+            <title>{cat.name}</title>
+            <meta name="description" content="Adopt a cat companion" />
+            <link rel="icon" href="/favicon.ico" />
+          </Head>
                 <div className='container mt-5' style={{display: 'flex'}}>
                     <picture>
-                        <img src={cat.image.url} alt={cat.image.alt} />
+                        <img style={{width: '400px'}} src={cat.image.url} alt={cat.image.alt} />
                     </picture>
-                    <div className='mx-5'>
+                    <div className='mx-4'>
                         <h1>{cat.name}</h1>
                         <p>{cat.description}</p>
                     </div>
                 </div>
-                </>
+            </>
             )}
             </DefaultLayout>
         </div>
