@@ -3,7 +3,7 @@ export const cats = [
         id: 1,
         name: 'Jamison',
         phone: '333-333-3333',
-        email: 'bubu@example.com',
+        email: 'jamison@example.com',
         image: {
             url: 'https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
             alt: 'sleeping orange cat'
