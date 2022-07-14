@@ -26,13 +26,18 @@ export default function Cat() {
             <meta name="description" content="Adopt a cat companion" />
             <link rel="icon" href="/favicon.ico" />
           </Head>
-                <div className='container mt-5' style={{display: 'flex'}}>
-                    <picture>
-                        <img style={{width: '400px'}} src={cat.image.url} alt={cat.image.alt} />
-                    </picture>
-                    <div className='mx-4'>
-                        <h1>{cat.name}</h1>
-                        <p>{cat.description}</p>
+                <div className='container mt-5' /* style={{display: 'flex'}} */>
+                    <div className='row'>
+                        <div className='col-12 col-md-6'>
+                            <picture>
+                                <img style={{width: '100%'}} src={cat.image.url} alt={cat.image.alt} />
+                            </picture>
+                        </div>
+                    
+                        <div className='col mt-3' /* style={{minWidth: '400px'}} */>
+                            <h1>{cat.name}</h1>
+                            <p>{cat.description}</p>
+                        </div>
                     </div>
                 </div>
             </>
