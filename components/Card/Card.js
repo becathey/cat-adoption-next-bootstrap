@@ -13,9 +13,9 @@ export default function Card({name, phone, email, image, id}) {
           </picture>
       </div>
       <div>
-          <h3>{name}</h3>
-          <h3>{phone}</h3>
-          <h3>{email}</h3>
+          <h4>{name}</h4>
+          <h4>{phone}</h4>
+          <h4>{email}</h4>
       </div>
     </div>
   )
