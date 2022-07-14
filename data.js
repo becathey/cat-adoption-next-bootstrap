@@ -1,7 +1,7 @@
 export const cats = [
     {
         id: 1,
-        name: 'Bu Bu',
+        name: 'Jamison',
         phone: '333-333-3333',
         email: 'bubu@example.com',
         image: {
