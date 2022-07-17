@@ -12,7 +12,7 @@ export default function Cat() {
     }
     useEffect(() => {
         fetchCat()
-    }, [])
+    },)
     const router = useRouter()
     const {id} = router.query
     return (
