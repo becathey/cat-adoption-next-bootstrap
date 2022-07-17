@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from './Card.module.css'
 import { Router, useRouter } from 'next/router'
 
-export default function Card({name, phone, email, image, id}) {
+export default function Card({name, breed, personality, image, id}) {
     const router = useRouter()
   return (
     <div className={styles.card} onClick={() => router.push(`/cats/${id}`)}>
@@ -14,8 +14,8 @@ export default function Card({name, phone, email, image, id}) {
       </div>
       <div>
           <h4>{name}</h4>
-          <h4>{phone}</h4>
-          <h4>{email}</h4>
+          <h5>{breed}</h5>
+          <h6>{personality}</h6>
       </div>
     </div>
   )

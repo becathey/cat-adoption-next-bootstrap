@@ -2,8 +2,8 @@ export const cats = [
     {
         id: 1,
         name: 'Jamison',
-        phone: '333-333-3333',
-        email: 'jamison@example.com',
+        breed: 'Orange tabby',
+        personality: 'quiet, gentle, affectionate',
         image: {
             url: 'https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
             alt: 'sleeping orange cat'
@@ -16,8 +16,8 @@ export const cats = [
     {
         id: 2,
         name: 'Sydney',
-        phone: '333-333-4444',
-        email: 'sydney@example.com',
+        breed: 'Orange Persian',
+        personality: 'playful, sociable, curious',
         image: {
             url: 'https://images.unsplash.com/photo-1511044568932-338cba0ad803?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
             alt: 'orange Persian cat'
@@ -30,10 +30,10 @@ export const cats = [
     {
         id: 3,
         name: 'Moxie',
-        phone: '333-444-3333',
-        email: 'moxie@example.com',
+        breed: 'Russian blue',
+        personality: 'active, vigilant, inquisitive',
         image: {
-            url: 'https://images.unsplash.com/photo-1529257414772-1960b7bea4eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+            url: 'https://images.unsplash.com/photo-1487300001871-12053913095d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
             alt: 'gray cat'
         },
         favored: false,
@@ -44,8 +44,8 @@ export const cats = [
     {
         id: 4,
         name: 'Jax',
-        phone: '333-333-5555',
-        email: 'jax@example.com',
+        breed: 'Gray tabby',
+        personality: 'energetic, vocal, playful',
         image: {
             url: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
             alt: 'gray tabby cat'
@@ -58,10 +58,10 @@ export const cats = [
     {
         id: 5,
         name: 'Bessie',
-        phone: '555-333-3333',
-        email: 'bessie@example.com',
+        breed: 'Gray & white tabby',
+        personality: 'even-tempered, shy, gentle',
         image: {
-            url: 'https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+            url: 'https://images.unsplash.com/photo-1442291928580-fb5d0856a8f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80',
             alt: 'gray cat'
         },
         favored: false,
@@ -72,10 +72,10 @@ export const cats = [
     {
         id: 6,
         name: 'Rosie',
-        phone: '333-333-7777',
-        email: 'rosie@example.com',
+        breed: 'Brown & white long fur',
+        personality: 'timid, fearful, anxious',
         image: {
-            url: 'https://images.unsplash.com/photo-1472491235688-bdc81a63246e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+            url: 'https://images.unsplash.com/photo-1593627035153-0a615214e282?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
             alt: 'white and gray cat'
         },
         favored: false,

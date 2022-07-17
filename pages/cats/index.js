@@ -30,8 +30,8 @@ export default function Home() {
                         name={cat.name}
                         id={cat.id}
                         key={cat.id}
-                        phone={cat.phone}
-                        email={cat.email}
+                        breed={cat.breed}
+                        personality={cat.personality}
                         image={cat.image}
                     />
                 ))}
