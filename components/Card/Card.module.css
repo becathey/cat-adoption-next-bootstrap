@@ -6,6 +6,9 @@
     margin: 0 1rem 2rem;
     box-shadow: 0.1rem 0.1rem 1rem hsla(0, 0%, 0%, 0.3);
 }
+.card:hover {
+    box-shadow: 0.1rem 0.1rem 1rem hsla(0, 0%, 0%, 0.8);
+}
 .card-header {
     padding: 0;
     position: relative;
